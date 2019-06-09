@@ -1,0 +1,244 @@
+.positionBox {
+  display: flex;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.positionBox .weizhi {
+  width: 180rpx;
+  background: #ccc;
+  color: #999;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 2;
+}
+.positionBox .group  {
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+  padding: 10rpx 0 10rpx 5rpx;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 5px;
+  /* line-height: 2; */
+} 
+.positionBox .group .icon {
+    display: inline-block;
+    /* background: pink; */
+    margin-top: 10rpx;
+}
+.positionBox .group .input {
+  display: inline-block;
+  margin-left: 3px;
+  flex: 1;
+  font-size: 12px;
+}
+.leiBie {
+  /* margin-top: 30rpx; */
+}
+.leiBie .ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.leiBie .ul .li {
+  width: 25%;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.leiBie .ul .li .img {
+  width: 50%;
+  height: 90rpx;
+  margin: 0 auto;
+  background: orange;
+  overflow: hidden;
+  border-radius: 50%
+}
+.leiBie .ul .li .img image {
+  width: 60%;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.leiBie .ul .li .p {
+  color: #ccc;
+  font-size: 20rpx;
+  margin-top: 8rpx;
+}
+/* 附近商家 */
+.fujinBox {
+ margin-top: 30rpx;
+}
+.fujinBox .h2{
+  display: flex;
+   background: #999;
+  box-sizing: border-box;
+  padding: 20rpx 0 0 0;
+}
+.fujinBox .h2 .p {
+  background: #fff;
+  flex: 1;
+  color: #999;
+  text-align: center; 
+  font-size: 15px;
+  line-height: 2;
+}
+.fujinBox .h2 .touRight {
+  background: #fff;
+  box-sizing: border-box;
+  padding-right: 20rpx;
+  color: #999;
+  
+}
+.fujinBox .imgSj0,.fujinBox .imgSj1 {
+  display: inline-block;
+}
+.fujinBox .imgSj0 {
+  width: 30%;
+  margin-left: 40rpx;
+  height: 80rpx;
+}
+.fujinBox .imgSj1 {
+  width: 15%;
+  margin-left: 60rpx; 
+  height: 80rpx;
+}
+
+/* 优惠券 */
+.youhui {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40rpx;
+  width: 100%;
+}
+.youhui .youhui2,.youhui .youhui4,.youhui .youhui5{
+ 
+  text-align: center;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 20rpx 60rpx;
+}
+.youhui .youhui2 {
+   border: 1px solid red;
+   background: pink;
+   color: red;
+}
+.youhui .youhui4 {
+  border: 1px solid green;
+  background: rgb(227, 235, 227);
+  color: green;
+}
+.youhui .youhui5 {
+
+  border: 1px solid orange;
+  background: rgb(240, 230, 211);
+  color: orange;
+}
+.youhui .youhui2 text {
+
+  /* font-size: 40rpx; */
+}
+.youhui .youhui2 .youhuiTj,.youhui .youhui4 .youhuiTj,.youhui .youhui5 .youhuiTj {
+
+  font-size: 20rpx;
+}
+
+/* 大厨推荐 */
+
+.dachu {
+
+  margin-top: 40rpx;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.dachu .dachuLeft,.dachu .dachuRight{
+
+  width: 50%;
+}
+.dachu .dachuLeft image ,.dachu .dachuRight image {
+
+  width: 100%;
+  height: 200rpx;
+}
+
+.dachu .dachuCenter {
+
+  position: absolute;
+  top: 30rpx;
+  left: 35%;
+  background: rgba(255, 255, 255, .5);
+  font-size: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30rpx 0;
+}
+.dachu .dachuCenter view:nth-child(1) {
+
+  text-decoration:underline; 
+  text-decoration-color: #fff;
+}
+.dachu .dachuCenter view:nth-child(2) {
+
+  font-size: 25rpx;
+  color: rgb(85, 21, 21);
+  font-weight: bolder;
+}
+.dachu .dachuCenter view:nth-child(3) {
+
+  background: #fff;
+  color: red;
+  margin: 0 6rpx;
+  padding: 4rpx;
+  border-radius: 5px;
+}
+.cainiLike .h1 {
+  padding: 16rpx 0;
+  text-align: center;
+  color: red;
+  font-size: 15px;
+}
+.likeBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.likeMain {
+  
+  width: 50%;
+  overflow: hidden;
+}
+.likeMain .likeImg {
+
+  text-align: center;
+}
+.likeMain .likeImg image{
+
+  width: 80%;
+  height: 330rpx;
+}
+.likeMain .likeName {
+
+  width: 80%;
+  font-size: 10px;
+  margin: 0rpx auto;
+}
+.likeMain .likeJiage {
+
+  width: 80%;
+  display: flex;
+  margin: 20rpx auto;
+  justify-content: space-between;
+}
+.likeMain .likeJiage text {
+
+  color: red;
+  font-size: 10px;
+}
+.likeMain .likeJiage image {
+ width: 40rpx;
+  height: 40rpx;
+  background: red;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 5rpx;
+}

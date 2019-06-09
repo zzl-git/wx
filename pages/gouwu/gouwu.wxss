@@ -1,0 +1,136 @@
+.gouwu {
+  margin-top: 100rpx;
+  text-align: center;
+}
+.gouwu image {
+  width: 40%;
+  height:330rpx; 
+}
+.gouwuBox {
+  text-align: center;
+  
+}
+.gouwuBox view:nth-child(2) {
+  margin: 40rpx 0;
+}
+.gouwuBox button {
+  background: none;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+.gouwuOne .li{
+  display: flex;
+  margin-top: 20rpx;
+}
+.gouwuOne .li view:nth-child(1){
+  /* width: 140rpx; */
+  height: 80rpx;
+  /* overflow: hidden; */
+  margin-left: 60rpx;
+}
+.gouwuOne .li view:nth-child(1) image {
+  width: 80rpx;
+  height: 100%;
+  vertical-align: middle;
+  
+}
+.gouwuOne .li view:nth-child(2) {
+  width: 40%;
+  font-size: 15px;
+  color: #666;
+  margin-left: 20rpx;
+}
+.gouwuOne .li view:nth-child(3) view:nth-child(1) {
+  margin-left: 60rpx;
+}
+.gouwuOne .li view:nth-child(3) view:nth-child(2) text:first-child{
+  display: inline;
+  border: 1px solid #333;
+  padding: 0rpx 15rpx;
+  font-size: 15px;
+}
+.gouwuOne .li view:nth-child(3) view:nth-child(2) text:nth-child(2) {
+  display: inline;
+  padding: 0rpx 10rpx;
+  font-size: 15px;
+  border: 1px solid #ccc;
+}
+.gouwuOne .li view:nth-child(3) view:nth-child(2) text:nth-child(3) {
+  display: inline;
+  padding: 0rpx 15rpx;
+  font-size: 15px;
+  border: 1px solid #333;
+}
+.jieSuan {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+.jieSuan>view:nth-child(1){
+  font-size: 12px;
+  margin-top: 10rpx;
+  /* width: 300rpx; */
+  display: flex;
+  flex: 1.5;
+  height: 82rpx;
+}
+
+.jieSuan>view:nth-child(1) view:nth-child(2){
+    font-size: 14px;
+     margin-left: 14px;
+}
+.jieSuan>view:nth-child(1) view:nth-child(2) view:nth-child(1) text {
+  color: red;
+}
+.jieSuan>view:nth-child(1) view:nth-child(2)> text{
+  font-size: 14px;
+  color: #ccc;
+}
+.jieSuan>view:nth-child(2) {
+  /* flex: 1; */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  /* background: #ff0000; */
+  display: flex;
+   /* justify-content: flex-space-around; */
+   height:82rpx;
+   
+}
+.jieSuan>view:nth-child(2) button:nth-child(2)
+,.jieSuan>view:nth-child(2) button:nth-child(1)
+,.jieSuan>view:nth-child(2) button:nth-child(3)
+,.jieSuan>view:nth-child(2) button:nth-child(4) {
+  /* padding: 0; */
+  /* background: red; */
+  font-size: 24rpx;
+  line-height: 3;
+}
+.jieSuan>view:nth-child(2) button:nth-child(1)
+,.jieSuan>view:nth-child(2) button:nth-child(3)
+,.jieSuan>view:nth-child(2) button:nth-child(4) {
+  border: 1px solid #000;
+  background: none;
+}
+.jieSuan>view:nth-child(2) button:nth-child(2) {
+  background: red;
+  border: none;
+  border-radius: 0;
+  margin-left: 10rpx;
+  color: #fff;
+}
+.jieSuan>view:nth-child(2) button:nth-child(3)
+,.jieSuan>view:nth-child(2) button:nth-child(4) {
+  margin-left: 10rpx;
+}
+checkbox .wx-checkbox-input{
+  border-radius: 50%;/* 圆角 */
+  width: 46rpx; /* 背景的宽 */
+  height: 46rpx; /* 背景的高 */
+  color: #fff;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  /* border:none; */
+  background: red;
+}

@@ -1,0 +1,228 @@
+<!-- 顶部的滑动轮播 -->
+<swiper indicator-dots="{{indicatorDots}}" 
+  indicator-active-color="#fff"
+  >
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" height="200" 
+      style='width:100%'
+      />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 顶部的滑动轮播结束-->
+<view class='positionBox'>
+      <view class='weizhi'>
+
+          贵阳
+      </view>
+      <view class="group">
+     
+          <icon type="search" size="15" class='icon'/>
+          <input type="text" placeholder="请输入关键字进行搜索" class='input'/>
+      </view>
+</view>
+<!-- 菜品种类 -->
+<view class='leiBie'>
+
+    <view class='ul'>
+
+      <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           特色火锅
+        </view>
+      </view>
+
+       <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           蛋糕甜心
+        </view>
+      </view>
+
+       <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           烤鱼
+        </view>
+      </view>
+
+       <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           炒菜
+        </view>
+      </view>
+
+       <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           特色小炒
+        </view>
+      </view>
+
+       <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           家常小炒
+        </view>
+      </view>
+
+       <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           养生炖汤
+        </view>
+      </view>
+
+       <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           外卖跑腿
+        </view>
+      </view>
+
+       <view class='li'>
+
+        <view class='img'>
+          <image src='../../static/imgs/hot.png'></image>
+        </view>
+        <view class='p'>
+           商家入驻
+        </view>
+      </view>
+    </view>
+</view>
+<!-- 附近商家 -->
+
+<view class='fujinBox'>
+  <view class='h2'>
+    <view class='p'>
+
+      附近商家
+    </view>
+    <view class='touRight'>
+
+      >
+    </view>
+  </view>
+  <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3142320276,672839037&fm=26&gp=0.jpg' class='imgSj0'></image>
+  <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2003665220,1964548325&fm=26&gp=0.jpg' class='imgSj1'></image>
+</view>
+
+<!-- 优惠券 -->
+<view class='youhui'>
+  <view class='youhui2'>
+
+      <text>¥2</text>
+      <view class='youhuiTj'>满15元可用</view>
+  </view>
+   <view class='youhui4'>
+
+      <text>¥4</text>
+      <view class='youhuiTj'>满20元可用</view>
+  </view>
+   <view class='youhui5'>
+
+      <text>¥5</text>
+      <view class='youhuiTj'>满30元可用</view>
+  </view>
+</view>
+
+<!-- 大厨推荐 -->
+
+<view class='dachu'>
+
+    <view class='dachuLeft'>
+
+        <image src='http://img0.imgtn.bdimg.com/it/u=2580019963,2975104887&fm=26&gp=0.jpg'></image>
+    </view>
+
+    <view class='dachuRight'>
+
+         <image src='http://img0.imgtn.bdimg.com/it/u=2580019963,2975104887&fm=26&gp=0.jpg'></image>
+    </view>
+
+    <view class='dachuCenter'>
+
+        <view>
+
+            赢VIP会员专属活动
+        </view>
+
+         <view>
+
+            大厨推荐
+        </view>
+
+         <view>
+
+            进口原料 美味点心 限量抢购
+        </view>
+    </view>
+</view>
+
+<!-- 猜你喜欢 -->
+
+<view class='cainiLike'>
+      <view class='h1'>
+
+        猜你喜欢
+      </view>
+
+      <view class='likeBox'>
+
+          <view class='likeMain' wx:for="{{likeData}}">
+              
+              <view class='likeImg'>
+
+                  <image src='{{item.likeImg}}'></image>
+              </view>
+
+              <view class='likeName'>
+
+                  {{item.likeName}}
+              </view>
+
+              <view class='likeJiage'>
+
+                  <text>{{item.likeJiage}}</text>
+                  <image class='gouwuche' src='../../static/imgs/gouwu.png' bindtap='chuandiData'
+                   data-likeName='{{likeName}}'
+                   ></image>
+              </view>
+          </view>
+      </view>
+</view>
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+<view class='gouwuBox' wx:if="{{gouwuData}}">
+
+    <view class="gouwu">
+      
+     <image src='../../static/imgs/购物.png'/>
+    </view>
+
+    <view>购物车空空如也~</view>
+
+
+    <button size='mini' bindtap='gouwuData1'>到处逛逛</button>
+</view>
+
+
+<view wx:if="{{!gouwuData}}" class='gouwuOne'>
+    <view class='ul'>
+    
+      <view class='li'>
+        <view>
+
+        <checkbox 
+         color='#fff'
+     checked="{{checked}}"
+    bindtap='gaibianChed'
+     />
+        <image src='{{imgs}}' ></image>
+        </view>
+        <!-- 菜名 -->
+        <view>
+          {{name}}
+        </view>
+
+        <view>
+        <!-- 价格 -->
+        <view>
+          {{price}}
+        </view>
+          
+
+          <view>
+              <!-- 数量选择 -->
+              <text bindtap='dataJian'>-</text>
+              <text>{{connt}}</text>
+              <text bindtap='dataJia'>+</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+</view>
+
+<!-- 结算 -->
+<view class='jieSuan' wx:if="{{!gouwuData}}">
+
+      <view>
+
+        
+        <view>
+        
+          <checkbox 
+
+            color='#fff'
+          checked="{{checked}}"
+          bindtap='gaibianChed'
+          />全选
+        </view>
+
+        <view hidden="{{xianshi}}">
+
+
+          <view>
+            合计: <text>{{price}}</text>
+          </view>
+          <text>不含运费</text>
+        </view>
+      </view>
+      
+      <view>
+          <button 
+          size='mini'
+          bindtap='bianji'
+          hidden="{{xianshi}}"
+          >编辑</button>
+          <button size='mini' hidden="{{xianshi}}">结算(1)</button>
+  
+          <button
+           size='mini'
+            hidden="{{!xianshi}}"
+            bindtap='shanchuData'
+            >删除</button>
+          <button
+           size='mini'
+            hidden="{{!xianshi}}"
+            bindtap='wangcheng'
+            >完成</button>
+      </view>
+   
+</view>
+
